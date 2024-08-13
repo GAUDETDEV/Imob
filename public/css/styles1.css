@@ -1,0 +1,151 @@
+ /* styles de la sidebar */
+ body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #171717;
+    padding-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s ease;
+    transform: translateX(0);
+}
+
+.sidebar .toggle-btn {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: -40px;
+    background-color: #333;
+    color: rgb(0, 252, 55);
+    padding: 10px;
+    cursor: pointer;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu > li {
+    position: relative;
+}
+
+.menu > li > a {
+    display: block;
+    padding: 15px 20px;
+    color: rgb(0, 255, 30);
+    text-decoration: none;
+}
+
+.menu > li > a:hover {
+    background-color: #24dc07;
+    color:rgb(0, 0, 0);
+}
+
+.dropdown-menu {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #535353;
+}
+
+.dropdown-menu > li > a {
+    display: block;
+    padding: 10px 20px;
+    color: rgb(2, 250, 31);
+    text-decoration: none;
+}
+
+.dropdown-menu > li > a:hover {
+    background-color: #13e300;
+    color: #000000;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.content {
+    margin-left: 250px;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: margin-left 0.3s ease;
+}
+
+.content-center {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        transform: translateX(-250px);
+    }
+
+    .sidebar.active {
+        transform: translateX(0);
+    }
+
+    .sidebar .toggle-btn {
+        display: block;
+    }
+
+    .content {
+        margin-left: 0;
+    }
+}
+
+
+/*style du compte*/
+
+.menu-1 {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-1 > li {
+    position: relative;
+}
+
+.menu-1 > li > a {
+    display: block;
+    padding: 15px 20px;
+    color: rgb(249, 249, 249);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/*style de l'affichage de la date et l'heure */
+
+#clock {
+    text-align: center;
+    background: #272727;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#time {
+    font-size: 25px;
+    color: #c5d8c2;
+}
+
+#date {
+    font-size: 18px;
+    color: #28f200;
+}
+
