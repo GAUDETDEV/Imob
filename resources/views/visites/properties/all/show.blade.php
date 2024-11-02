@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <style>
+    {{-- <style>
 
         form{
             background: rgb(40, 49, 40);
@@ -170,7 +170,103 @@
 
         </div>
 
-    </div>
+    </div> --}}
+
+    <!-- image-gallery -->
+
+        <!-- page-title -->
+        <section class="page__title p_relative">
+            <div class="bg-layer parallax-bg" data-parallax='{"y": 20}' style="background-image:url({{asset('assets/images/resource/page-title.png')}})">
+            </div>
+            <div class="container">
+                <div class="content-box p_relative">
+                    <h1 class="title">Ready Resort for Sell</h1>
+                    <ul class="bread-crumb">
+                        <li><a href="index.html"><span class="icon-icon-16"></span>Home</a></li>
+                        <li><span class="icon-57"></span>Properties Details</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- page-title end-->
+
+
+
+    <!-- image-gallery end-->
+
+    <!-- image-gallery -->
+        <section class="image__gallery">
+            <div class="image__gallery__content">
+                <div class="row">
+                    <div class="col-xxl-8 col-xl-12 image__gallery__left">
+                        <div class="inner__box" style="background-image:url({{asset('assets/images/gallery/gallery-image-01.png')}})">
+                            <div class="image__gallery__feature_image">
+                                <img class="d-block d-xxl-none" src="{{asset('assets/images/gallery/gallery-image-01.png')}}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 col-xl-12 image__gallery__right">
+                        <div class="row">
+                            <div class="col-xxl-12 col-xl-6 col-lg-6 col-md-12 gallery__top">
+                                <div class="inner__box">
+                                    <div class="image__box">
+                                        <figure class="image">
+                                            <img src="{{asset('assets/images/gallery/gallery-image-02.png')}}" alt="">
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-12 col-xl-6 col-lg-6 col-md-12 pt-4 gallery__bottom">
+                                <div class="row">
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                        <div class="inner__box">
+                                            <div class="image__box">
+                                                <figure class="image">
+                                                    <img src="{{asset('assets/images/gallery/gallery-image-03.png')}}" alt="">
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 last__gallery">
+                                        <div class="inner__box">
+                                            <div class="image__box ">
+                                                <figure class="image">
+                                                    <a href="#gallery-1" class="btn-gallery p_relative">
+                                                        <img src="{{asset('assets/images/gallery/gallery-image-04.png')}}" alt="">
+                                                        <div class="number__of__img p_absolute">
+                                                            <h2>14+</h2>
+                                                        </div>
+                                                    </a>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                        <div id="gallery-1" class="hidden">
+                                            <a href="{{asset('assets/images/gallery/gallery-01.jpg')}}">Image 1</a>
+                                            <a href="{{asset('assets/images/gallery/gallery-02.jpg')}}">Image 2</a>
+                                            <a href="{{asset('assets/images/gallery/gallery-03.jpg')}}">Image 3</a>
+                                            <a href="{{asset('assets/images/gallery/gallery-04.jpg')}}">Image 4</a>
+                                            <a href="{{asset('assets/images/gallery/gallery-05.jpg')}}">Image 5</a>
+                                            <a href="{{asset('assets/images/gallery/gallery-06.jpg')}}">Image 6</a>
+                                            <a href="{{asset('assets/images/gallery/gallery-07.jpg')}}">Image 7</a>
+                                            <a href="{{asset('assets/images/gallery/gallery-08.jpg')}}">Image 8</a>
+                                            <a href="{{asset('assets/images/gallery/gallery-09.jpg')}}">Image 9</a>
+                                            <a href="{{asset('assets/images/gallery/gallery-10.jpg')}}">Image 10</a>
+                                            <a href="{{asset('assets/images/gallery/gallery-11.jpg')}}">Image 11</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- image-gallery end-->
+
+
+
+
+
 
 
 @endsection

@@ -20,7 +20,6 @@ class PropertyController extends Controller
     public function index(Request $request)
     {
         //
-
         $query = Property::query();
 
         if ($request->filled('ville')) {

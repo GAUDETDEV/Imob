@@ -14,11 +14,13 @@ class HomeController extends Controller
         $properties_achats = Property::with('photos','options')->where('etat','Achat')->where('statut','disponible')->orderBy('created_at', 'desc')->limit(4)->get();
         $properties_locations = Property::with('photos','options')->where('etat','Location')->where('statut','disponible')->orderBy('created_at', 'desc')->limit(4)->get();
         $reviews = Review::orderBy('created_at', 'desc')->limit(10)->get();
+        $title = "Accueil";
 
         return view('home',[
             'properties_achats' => $properties_achats,
             'properties_locations' => $properties_locations,
-            'reviews' => $reviews
+            'reviews' => $reviews,
+            'title' => $title,
         ]);
 
     }

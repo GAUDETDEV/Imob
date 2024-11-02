@@ -19,6 +19,7 @@ class AppointmentController extends Controller
         //
 
         $query = $request->input('query');
+
         $appointments = Appointment::whereHas('property', function ($q) use ($query) {
             $q->where('adresse', 'like', '%' . $query . '%')
               ->orWhere('ville', 'like', '%' . $query . '%');
